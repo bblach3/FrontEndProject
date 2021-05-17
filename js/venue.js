@@ -16,10 +16,16 @@ var url = api+enterButton+key
 fetch(url)
 .then(response => response.json())
 .then(data =>{
+    
     console.log(data)
     //console.log(data.main.temp)
+
+    console.log(data._embedded)
+    console.log(data._embedded.venues[0].upcomingEvents.ticketmaster)
+    
+
     //console.log(data._embedded)
-    //console.log(data._embedded.venues[0].upcomingEvents.ticketmaster)
+
 
 
     //let Venue = data._embedded.venues[0].upcomingEvents.ticketmaster
