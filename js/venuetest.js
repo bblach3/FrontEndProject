@@ -20,7 +20,8 @@ var api = "https://app.ticketmaster.com/discovery/v2/venues.json?keyword="
 var key = "&size=1&apikey=6wEJrPVrGABh8jxlvochEnjvuXU3Y2kO"
 
 var url = api+enterButton+key
-
+var arr = []
+let listGroupContainer = document.getElementById('temp')
 fetch(url)
 .then(response => response.json())
 .then(data =>{
@@ -34,28 +35,27 @@ fetch(url)
     let Venue = data._embedded.venues[0].id
 
     
-
     fetch("https://app.ticketmaster.com/discovery/v2/events?venueId=" + Venue + "&size=20&apikey=6wEJrPVrGABh8jxlvochEnjvuXU3Y2kO")
     .then(response => response.json())
     .then(data => {
-        console.log(data);
-        console.log(data._embedded.events[0].name);
-        console.log(data._embedded.events[0].dates.start.localDate);
-        console.log(data._embedded.events[0].url);
-
-    var arr = []
+        // console.log(data);
+        // console.log(data._embedded.events[0].name);
+        // console.log(data._embedded.events[0].dates.start.localDate);
+        // console.log(data._embedded.events[0].url);
+    
+    
     for(let i=0; i < data._embedded.events.length; i++){
 
-        arr += data._embedded.events[i].name
-        arr += data._embedded.events[0].dates.start.localDate;
-        arr += data._embedded.events[0].url;
+        arr.push(
         `<div>
-        ${console.log(arr)}
-        </div>`
-
+        ${data._embedded.events[i].name}
+        ${data._embedded.events[0].dates.start.localDate}
+        ${data._embedded.events[0].url}
+     
+        </div>`)
     }
     })
-
+    
 })
 
 }
