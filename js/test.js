@@ -9,38 +9,30 @@ function getInputValue() {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-        .then(blob => {
+           let event = {};
+           for(let i=0; i < data._embedded.events.length; i++){
+               events = data._embedded.events[i].name
+                events2 = data._embedded.events[i].dates.start.localDate
+                events3 = data._embedded.events[i].images[0].url
 
-        
-            
-       
 
-            console.log(data)
-           
-         
+           }
             console.log(data._embedded.events);
-            let events = data._embedded.events[0].name
-            let events2 = data._embedded.events[0].dates
-            let events3 = data._embedded.events[0].url
-                .catch(error => {
-                    console.log(error);
-
-                })
 
             let div = document.getElementById("temp")
             let div2 = document.getElementById("temp2")
             let div3 = document.getElementById("temp3")
-            let div4 = document.getElementById("temp4").src = URL.createObjectURL(blob);
+            let div4 = document.getElementById("temp4").src =events3
          
           
             
         
             div.textContent = `${events.toString()}`
-            div2.textContent = `dates:${events2.toString()}`
-            div4.textContent = 
-            // div3.textContent = ``url-->
+            div2.textContent = `Dates:${events2.toString()}`
+
+     
           
 
         })
-    })
+    
 }
