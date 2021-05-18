@@ -1,13 +1,4 @@
-// fetch(`https://app.ticketmaster.com/discovery/v2/events.json?&apikey=6wEJrPVrGABh8jxlvochEnjvuXU3Y2kO`)
-//     .then(response => response.json())
-//     .then(data => { console.log(data)
-//     })
-
-   // https://app.ticketmaster.com/discovery/v2/events.json?size=1&apikey=6wEJrPVrGABh8jxlvochEnjvuXU3Y2kO
-
-   //https://api.seatgeek.com/2/venues?client_id=MjE5MTM0MDJ8MTYyMDkyMzM3NS4xNjc1NTM0
-
-   function getInputValue(){
+function getInputValue(){
     // Selecting the input element and get its value 
     var enterButton = document.getElementById("venues").value;
    
@@ -25,10 +16,10 @@ let listGroupContainer = document.getElementById('temp')
 fetch(url)
 .then(response => response.json())
 .then(data =>{
-    // console.log(data)
+    console.log(data)
     //console.log(data.main.temp)
-    //console.log(data._embedded)
-    //console.log(data._embedded.venues[0].upcomingEvents.ticketmaster)
+   
+    //console.log(data._embedded.venues[0].images[0].url)
 
 
     // let Venue = data._embedded.venues[0].upcomingEvents.ticketmaster
@@ -53,6 +44,7 @@ fetch(url)
 
             event.name = data._embedded.events[i].name;
             event.startDate = data._embedded.events[i].dates.start.localDate;
+            event.image = data._embedded.events[i].images[0].url
             event.url = data._embedded.events[i].url;
             
             arr.push(event);
@@ -68,20 +60,58 @@ fetch(url)
 }
 
 function displayEvents(eventsArray){
+    let location = document.getElementById('temp')
     // purpose of function: loop through eventsArray and append events into HTML DOM
+    let innerHtmlString = "";
+eventsArray.forEach(event => {
 
+    innerHtmlString += 
+    //`
+    //  <div class="event"
+    //     <div>${event.name}</div>
+    //     <div>${event.startDate}</div>
+    //     <img src="${event.image}" >
+    //     <a href="${event.url}"> Click for more info</a>
+       
+    // </div>
+    // `    
+   
+           `<div id="temp" class="container-fluid">
+            <div class="row d-flex flex-row d-inline-flex">
+              <div class="col-12">
+            
+            <div class="card border-2 border-primary" style="width: 18rem;">
+            <img class="card-img-top" src="${event.image}" alt="Card image cap">
+             <div class="card-body">
+            <h5 class="card-title">${event.name}</h5>
+            <p class="card-text">${event.startDate}</p>
+                <a href="${event.url}" class="btn btn-primary">More Info</a>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <br>
+
+            </div>`
+
+
+
+})
     // querySelector
 
     // you can either add events using the append method
     // or
     // you can add events in using innerHtml
 
-    let innerHtmlString = "";
+    
     // let location = document.querySelector('#somelocation')
     
     // for()
     //     innerHtmlString += `<div>  </div>`
 
-    // location.innerHtml = innerHtmlString;
+   location.innerHTML = innerHtmlString;
+   console.log(location);
+   console.log(innerHtmlString);
 
 }
