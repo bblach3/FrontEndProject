@@ -10,14 +10,17 @@ function getInputValue() {
         .then(response => response.json())
         .then(data => {
            let event = {};
+           let arr =[]
            for(let i=0; i < data._embedded.events.length; i++){
                events = data._embedded.events[i].name
                 events2 = data._embedded.events[i].dates.start.localDate
                 events3 = data._embedded.events[i].images[0].url
+                arr.push(event);
+                event = {};
 
 
            }
-            console.log(data._embedded.events);
+            console.log(arr);
 
             let div = document.getElementById("temp")
             let div2 = document.getElementById("temp2")
