@@ -1,134 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/header.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frontend</title>
-    
     <style>
-      
         .eventheight{
           height: 70vh
         }
-
         .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgb(112, 109, 109);
-  color: white;
-  text-align: center;
-}
-/* .logo-image{
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-top: -6px;
-} */
-
-
-
+          position: fixed;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          background-color: rgb(112, 109, 109);
+          color: white;
+          text-align: center;
+        }
+        img {
+          width: 100%;
+          height: 60%;
+        }
+        .list-group-item {
+          color:grey;
+        }
+        .list-group-item-heading {
+          font-style: fantasy;
+        }
     </style>
-  
-  <nav class="navbar navbar-expand-lg navbar-light bg-light txt-accent sticky-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-          
-            <a class="nav-link active" aria-current="page" href="../img/05.png">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <!-- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        
-      </div>
-    </div>
-  </nav>
-
-
-
-
-
-
-  
-  <!-- <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <div class="logo-image">
-            <img src="../img/bg3.jpg" class="img-fluid">
-      </div>
-
-        <nav id="navBar" class="navbar navbar-expand-lg bg-light txt-accent sticky-top ">
-        
-          <div class="container-fluid">
-            <header>
-
-              <div id="opacitylayer" class="position-relative top w-100 h-100 bg-black z15 opacity"></div>
-              
-              
-              
-              <div id="logo layer" class="position-relative top w-20 h-20 z20 d-flex flex-column justify-content-left align-items-left display-3 txt-accent">
-                <div>
-                    <img src="../img/05.png" alt="">
-                </div>
-
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Events</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Order</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav> -->
-
-  
-  
   </head>
-
-  <body>
+<body>
   
-<div class="container-fluid p-0">
+  <div class="container d-flex flex-column justify-content-start">
+
+    <!-- Start Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light txt-accent sticky-top">
+      <div class="container-fluid padding-top: 60px">
+        <a class="navbar-brand" href="../html/textindex.html">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            
+              <a class="nav-link active" aria-current="page" href="../html/venue.html">Venue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../js/test.html">Performer</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link active" href="../html/city.html">City</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../html/aboutus.html" tabindex="-1" aria-current="page">About Us</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <!-- End Nav -->
+    <div id="events" class="list-group d-flex flex-row flex-wrap p-2">
+      <div class="col-6 align-items-stretch text-center">
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">Denver</h4>
+        
+        <a class="navbar-brand" href="#">
+          <img src="../img/sports.jpeg" class="img-fluid" alt="..">
+        </a></p>
+        <p class="venue"></p>
+      </a>
+      </div>
+      <div class="col-6 align-items-stretch text-center">
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">New York</h4>
+        <a class="navbar-brand" href="#">
+          <img src="../img/band2.jpeg" alt="" style="height: 86%">
+        </a></p>
+        <p class="venue"></p>
+      </a>
+    </div>
+    <div class="col-6 align-items-stretch text-center">
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">Atlanta</h4>
+        <a class="navbar-brand" href="#">
+          <img src="../img/group3.jpeg" alt="">
+        </a></p>
+        <p class="venue"></p>
+      </a>
+    </div>
+    <div class="col-6 align-items-stretch text-center">
+      <a href="#" class="list-group-item">
+        <h4 class="list-group-item-heading">San Diego</h4>
+        <a class="navbar-brand" href="#">
+          <img src="../img/colors1.jpeg" alt="">
+        </a></p>
+        <p class="venue"></p>
+      </a>
+    </div>
+  </div>
+
 
 <header class="position-relative">
 
@@ -140,56 +128,12 @@
 
 <div id="logo layer" class="position-absolute top w-60 h-70 z10 d-flex flex-column justify-content-center align-items-center display-2 txt-accent">
   <div>
-      <img src="#" alt="">
-  </div>
+      <img src="../img/05.png">
+  </div>   
+</header>   
 
-    <!-- <div class="container-xxl my-md-4 bd-layout"> -->
-    <div class="container-fluid my-md-4 bd-layout">
-      <div class="row eventheight">
-        <div class="col">
-        <div id='events-panel' class="panel panel-primary h-80">
-          <div class="panel-heading align-content-lg-center">
-            <h3 class="panel-title">#</h3>
-          </div>
-          <div class="panel-body">
-            <div id="events" class="list-group d-flex flex-row flex-wrap p-2">
-            
-              <div class="col-6 align-items-stretch">
-              <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">Event title</h4>
-                <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p class="venue"></p>
-              </a>
-              </div>
-              <div class="col-6 align-items-stretch">
-              <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">Event title</h4>
-                <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p class="venue"></p>
-              </a>
-            </div>
-            <div class="col-6 align-items-stretch">
-              <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">Event title</h4>
-                <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p class="venue"></p>
-              </a>
-            </div>
-            <div class="col-6 align-items-stretch">
-              <a href="#" class="list-group-item">
-                <h4 class="list-group-item-heading">Event title</h4>
-                <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <p class="venue"></p>
-              </a>
-            </div>
-            </div>
-          </div>
-        
-        </div>
-      </header>        
-
-    <div class="footer">
-      <p>Footer</p>
+    <div class="footer stickybottom padding-top: 60px;">
+      <p..</p></p..>
     </div> 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -201,6 +145,3 @@
   </body>
 
 </html> 
-
-
-<!-- var item = items[Math.floor(Math.random() * items.length)]; -->
