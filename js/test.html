@@ -1,51 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Artist</title>
-</head>
-<style>
-.btn{
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    #h3 {
+      text-align: center;
+      color: red;
+      font-family: fantasy;
+      font-size: 200px;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background: url("/css/5BF9BDAC-9763-4AB9-A358-D64F9956FF66.jpeg");
+    }
+    .img1 {
+       /* height: 5rem; 
+      width: 5rem; */
+      animation-name: example;
+      animation-duration: 1s;
+      /* background-color: red; */
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
+    
+      display: block;
+      width: 20%
 
-}
 
+    
+    }
+    @keyframes example{
+       0%   {background-color:darkgoldenrod;}
+  25%  {background-color:darkmagenta;}
+  50%  {background-color:brown;}
+  100% {background-color: darkblue;}
+    }
 
+    .btn {
+      margin: 20px;
+    }
+  </style>
 
+  <body>
+    <div class="container">
+      <h3 id="h3">Mooove</h3>
+    <img class="img1" src="/css/05.png" class="img" />
 
+      <input
+        type="text"
+        id="events"
+        class="form-control btn-outline-blue"
+        placeholder="Type in artist name"
+        aria-describedby="button-addon2"
+      />
+      <button
+        class="btn btn-outline-light txt-accent table-hover"
+        type="button"
+        id="button-addon2"
+      >
+        Search events
+      </button>
 
-</style>
+      <!-- <div style="background-image: url("pop")></div> -->
+      <div
+        id="temp"
+        class="card-deck p-1 div d-flex flex-wrap justify-content-evenly"
+      ></div>
+      <br />
+      <div id="temp2" class="p-1 div"></div>
+      <div id="temp3" class="p-1 div"></div>
+      <br />
+      <img
+        src=""
+        class="align-self-center bg-secondary"
+        id="temp4"
+        class="p-1 div"
+      />
 
+      <br />
+      <div id="temp5" class="p-1 div"></div>
+      <br />
+      <div id="temp6" class="p-1 div"></div>
+    </div>
 
-
-
-
-<body>
-  
-
- 
-      <div class="bg">
-        <h3>Who is playing</h3>
-        <div class="input-group mb-5 w-25">
-            <input type="text" id="events" class="form-control" placeholder="Type in artist name" aria-label="Type in city" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary txt-accent" type="button" onclick="getInputValue()" id="button-addon2">Submit</button>
-          </div>
-            <br>
-          <div id="temp" class="p-1 div" ></div>
-          <br>
-          <div id="temp2" class="p-1 div" ></div>
-          <div id="temp3" class="p-1 div" ></div>
-          <br>
-          <div id="temp4" class="p-1 div" ></div>
-          <br>
-          <div id="temp5" class="p-1 div" ></div>
-          <br>
-          <div id="temp6" class="p-1 div" ></div>
-        <!-- </div> -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-        <script src="test.js"></script>
-       
-</body>
+    <script src="test.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
-
