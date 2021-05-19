@@ -1,11 +1,17 @@
 header{
-    height: 400px;
+    height: 300px;
     width: 100%;
 
-    background-color: rgb(2, 2, 2);
-    overflow: hidden;
+    /* background-image: url("../img/bg3.jpg"); */
+    background-position: center;
+    
 }
+body {
+    
 
+    background-image: url("../img/bg3.jpg");
+    background-position: center;
+}
 .top{
     top: 0px;
 }
