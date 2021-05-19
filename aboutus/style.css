@@ -30,6 +30,13 @@ body{
 	font-size: 24px;
 	background-image: url('05.png');
 }
+
+@media only screen and (max-width: 1200px) {
+	.container {
+		height: auto
+	}
+}
+
 .about-us{
 	display: flex;
 	justify-content: center;
@@ -55,6 +62,13 @@ text-align: center;
 	margin:10px;
 	flex-wrap: wrap;
 }
+
+@media only screen and (max-width: 600px) {
+	.cards{
+		flex-direction: column;
+	}
+}
+
 .card-img{
 	border-radius: 5px;
 }
