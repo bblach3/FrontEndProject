@@ -12,6 +12,7 @@ var key = "&size=1&apikey=6wEJrPVrGABh8jxlvochEnjvuXU3Y2kO"
 
 var url = api+enterButton+key
 var arr = []
+document.getElementById("error").innerHTML = ""
 
 fetch(url)
 .then(response => response.json())
@@ -49,7 +50,7 @@ fetch(url)
 
 })
 .catch(error => {
-    document.getElementById("temp").innerHTML = "City name not found. Please try again!";
+    document.getElementById("error").innerHTML = "City name not found. Please try again!";
     console.log(" error! try again")
 })
 
@@ -70,11 +71,9 @@ eventsArray.forEach(event => {
            <h5 class="card-title">${event.name}</h5>
            <p class="card-text">${event.startDate}</p>
              </div>
-           <div class="card-footer bg-transparent border-success"><a href="${event.url}" class="btn btn-dark">Buy Tickets</a></div>
+           <div class="card-footer bg-dark border-success"><a href="${event.url}" class="btn btn-dark">Buy Tickets</a></div>
            </div>
             `
-
-
 
 })
 
