@@ -40,13 +40,13 @@ function getInputValue() {
         var location = document.getElementById("temp")
         let innerHtmlString = ""
         eventsArr.forEach(element => {
-            innerHtmlString += `<div class="card border-2 border-primary" style="width: 18rem; margin: 0.3em;">
-            <img class="card-img-top" src="${element.events3}" alt="Card image cap">
+            innerHtmlString += `<div class="card border-2" style="width: 18rem; margin: 0.3em;">
+            <img class="card-img-top" height=150px width=200px src="${element.events3}" alt="Card image cap">
              <div class="card-body">
             <h5 class="card-title">${element.events}</h5>
             <p class="card-text">${element.events2}</p>
-                <a href="${element.events4}" class="btn btn-primary">More Info</a>
-            </div>
+              </div>
+            <div class="card-footer bg-transparent border-success"><a href="${element.events4}" class="btn btn-warning" style="background-color: blue">More Info</a></div>
             </div>`
         });
         location.innerHTML = innerHtmlString;

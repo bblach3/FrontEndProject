@@ -15,56 +15,88 @@
   <style>
     #h3 {
       text-align: center;
-      color: lightgreen;
+      color: red;
+      font-family: fantasy;
+      font-size: 200px;
     }
     body {
       margin: 0;
       padding: 0;
       font-family: sans-serif;
+      background: url("/css/5BF9BDAC-9763-4AB9-A358-D64F9956FF66.jpeg");
     }
+    .img1 {
+       /* height: 5rem; 
+      width: 5rem; */
+      animation-name: example;
+      animation-duration: 1s;
+      /* background-color: red; */
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 50px;
     
-  
+      display: block;
+      width: 20%
+
+
+    
+    }
+    @keyframes example{
+       0%   {background-color:darkgoldenrod;}
+  25%  {background-color:darkmagenta;}
+  50%  {background-color:brown;}
+  100% {background-color: darkblue;}
+    }
+
+    .btn {
+      margin: 20px;
+    }
   </style>
 
   <body>
     <div class="container">
-      <h3 id="h3">Who is playing</h3>
-      
-      
+      <h3 id="h3">Mooove</h3>
+    <img class="img1" src="/css/05.png" class="img" />
 
-      <button
-        class="btn btn-outline-secondary txt-accent table-hover btn-outline-success"
-        type="button"
-        id="button-addon2"
-      >
-        Search Band
-      </button>
-      
-      <br />
-      <br />
       <input
         type="text"
         id="events"
-        class="form-control btn-outline-success"
+        class="form-control btn-outline-blue"
         placeholder="Type in artist name"
         aria-describedby="button-addon2"
       />
-      
+      <button
+        class="btn btn-outline-light txt-accent table-hover"
+        type="button"
+        id="button-addon2"
+      >
+        Search events
+      </button>
+
       <!-- <div style="background-image: url("pop")></div> -->
-      <div id="temp" class="p-1 div d-flex flex-wrap justify-content-evenly">
-          
-      </div>
+      <div
+        id="temp"
+        class="card-deck p-1 div d-flex flex-wrap justify-content-evenly"
+      ></div>
       <br />
       <div id="temp2" class="p-1 div"></div>
       <div id="temp3" class="p-1 div"></div>
       <br />
-      <img src="" class="align-self-center bg-success" id="temp4" class="p-1 div" />
+      <img
+        src=""
+        class="align-self-center bg-secondary"
+        id="temp4"
+        class="p-1 div"
+      />
+
       <br />
       <div id="temp5" class="p-1 div"></div>
       <br />
       <div id="temp6" class="p-1 div"></div>
     </div>
-    
+
     <script src="test.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
