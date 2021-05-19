@@ -76,11 +76,8 @@ eventsArray.forEach(event => {
     // </div>
     // `    
    
-           `<div id="temp" class="container-fluid">
-            <div class="row d-flex flex-row d-inline-flex">
-              <div class="col-12">
-            
-            <div class="card border-2 border-primary" style="width: 18rem;">
+           `
+           <div class="card border-2 border-primary" style="width: 18rem; margin: 0.3em;">
             <img class="card-img-top" src="${event.image}" alt="Card image cap">
              <div class="card-body">
             <h5 class="card-title">${event.name}</h5>
@@ -88,12 +85,10 @@ eventsArray.forEach(event => {
                 <a href="${event.url}" class="btn btn-primary">More Info</a>
             </div>
             </div>
-            </div>
-            </div>
-            </div>
-            <br>
-
-            </div>`
+          
+         
+            
+            `
 
 
 

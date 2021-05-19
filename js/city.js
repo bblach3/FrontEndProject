@@ -16,24 +16,16 @@ var arr = []
 fetch(url)
 .then(response => response.json())
 .then(data =>{
-    
-    // try {
-    //     !response.ok
-    // }
-    // catch(err) {
-    //     //document.getElementById("demo").innerHTML = err.name;
-    //     console.log("error!!!!!");
-    // }
-
     console.log(data)
-  
-    let Venue = data._embedded.venues[0].id
+   
+    let Market = data._embedded.venues[0].markets[0].id
+    
 
     
-    fetch("https://app.ticketmaster.com/discovery/v2/events?venueId=" + Venue + "&size=20&apikey=6wEJrPVrGABh8jxlvochEnjvuXU3Y2kO")
+    fetch("https://app.ticketmaster.com/discovery/v2/events?marketId=" + Market + "&size=20&apikey=6wEJrPVrGABh8jxlvochEnjvuXU3Y2kO")
     .then(response => response.json())
     .then(data => {
-    
+ 
     
         console.log(data);
 
@@ -52,16 +44,16 @@ fetch(url)
 
         console.log(arr);
         displayEvents(arr);
-    })
+})
     
+
 })
 .catch(error => {
-    document.getElementById("temp").innerHTML = "Venue not found. Please try again!";
+    document.getElementById("temp").innerHTML = "City name not found. Please try again!";
     console.log(" error! try again")
 })
 
 }
-
 
 function displayEvents(eventsArray){
     let location = document.getElementById('temp')
@@ -70,6 +62,7 @@ function displayEvents(eventsArray){
 eventsArray.forEach(event => {
 
     innerHtmlString += 
+   
            `
            <div class="card border-2 cardshadow" style="width: 18rem; margin: 0.3em;">
            <img class="card-img-top" height=150px width=200px src="${event.image}" alt="Card image cap">
@@ -77,16 +70,14 @@ eventsArray.forEach(event => {
            <h5 class="card-title">${event.name}</h5>
            <p class="card-text">${event.startDate}</p>
              </div>
-           <div class="card-footer bg-transparent border-success"><a href="${event.url}" class="btn btn-dark" ">Buy Tickets</a></div>
+           <div class="card-footer bg-transparent border-success"><a href="${event.url}" class="btn btn-dark">Buy Tickets</a></div>
            </div>
             `
 
-})
-    // querySelector
 
-    // you can either add events using the append method
-    // or
-    // you can add events in using innerHtml
+
+})
+
 
    location.innerHTML = innerHtmlString;
    console.log(location);
