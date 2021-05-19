@@ -1,63 +1,110 @@
-body{
-    margin: 0px;
-    padding: 0px;
+/* body{
+	margin:0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+} */
+.container{
+	width: 90%;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: url(../css/bg3.jpg);
+	background-size: cover;
+	background-position: center center;
+	color: #fff;
+	padding: 2;
 }
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin:5px;
+}
+/* #navBar {
+    background-color: aqua;
+} */
+/* .nav span{
+	margin-left: 30px;
+} */
+/* .about-us{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	flex-direction: column;
+}
+.who-we-are{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+} */
+/* .who-we-are span{
+	width: 60%;
+	align-items: center;
+text-align: center;
+} */
+/* .cols-6{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:8px;
+	flex-wrap: wrap;
+} */
+/* .card-img{
+	border-radius: 5px;
+} */
+/* .cols-6{
+	width: 10rem;
+	margin: 20px;
+} */
+/* .cols-6 p{
+	font-size: 10px;
+} */
+/* .social-media{
+	width: 90%;
+	display: flex;
+	justify-content: flex-end;
+}
+.social-media i{
+	margin:10px;
+} */
+/* .active{
+	border-bottom: 1px solid #fff;
+} */
 
-.bg-black{
-    background-color: #000000;
+/* .card-img1{
+	width: 100%;
+	height: 12rem;
+	background-image: url('01.jpg');
+	background-size: cover;
+	background-position: center center;
 }
-
-.bg-navy{
-    background-color: #14213D;
+.card-img2{
+	width: 100%;
+	height: 12rem;
+	background-image: url('02.jpg');
+	background-size: cover;
+	background-position: center center;
 }
-
-.bg-accent{
-    background-color: #FCA311;
+.card-img3{
+	width: 100%;
+	height: 12rem;
+	background-image: url('03.jpg');
+	background-size: cover;
+	background-position: center center;
 }
-
-.bg-lightGray{
-    background-color: #E5E5E5;
-}
-
-.bg-white{
-    background-color: #fff;
-}
-/* ***************** */
-.txt-black{
-    color: #000000;
-}
-
-.txt-navy{
-    color: #14213D;
-}
-
-.txt-accent{
-    color: #FCA311;
-}
-
-.txt-accent a{
-    color: #FCA311;
-}
-.txt-accent a:hover{
-    color: #E5E5E5;
-}
-
-.txt-lightGray{
-    color: #E5E5E5;
-}
-
-.txt-white{
-    color: #fff;
-}
-
-.ps-light{
-    background-color: white;
-    /* height: 550px; */
-    width: 100%;
-}
-
-.ps-gray{
-    background-color: #E5E5E5;
-    height: 550px;
-    width: 100%;
+.card-img4{
+	width: 100%;
+	height: 12rem;
+	background-image: url('04.jpg');
+	background-size: cover;
+	background-position: center center;
+} */
+.logo{
+	font-family: 'Dancing Script',cursive;
+	height: 3rem;
+    width: 3rem;  
 }
