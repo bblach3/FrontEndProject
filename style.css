@@ -1,34 +1,31 @@
-/* body{
+body{
 	margin:0;
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
-} */
+}
 .container{
-	width: 90%;
-	height: 80vh;
+	width: 100%;
+	height: 100vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background-image: url(../css/bg3.jpg);
+	background-image: url(bg3.jpg);
 	background-size: cover;
 	background-position: center center;
 	color: #fff;
-	padding: 2;
+	padding: 0
 }
-.navbar{
+.nav{
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
-	margin:5px;
+	width: 90%;
+	margin:10px;
 }
-/* #navBar {
-    background-color: aqua;
-} */
-/* .nav span{
-	margin-left: 30px;
-} */
-/* .about-us{
+.nav span{
+	margin-left: 20px;
+}
+.about-us{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -40,42 +37,41 @@
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-} */
-/* .who-we-are span{
+}
+.who-we-are span{
 	width: 60%;
 	align-items: center;
 text-align: center;
-} */
-/* .cols-6{
+}
+.cards{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin:8px;
+	margin:10px;
 	flex-wrap: wrap;
-} */
-/* .card-img{
+}
+.card-img{
 	border-radius: 5px;
-} */
-/* .cols-6{
-	width: 10rem;
+}
+.cards .card{
+	width: 16rem;
 	margin: 20px;
-} */
-/* .cols-6 p{
-	font-size: 10px;
-} */
-/* .social-media{
+}
+.card p{
+	font-size: 14px;
+}
+.social-media{
 	width: 90%;
 	display: flex;
 	justify-content: flex-end;
 }
 .social-media i{
 	margin:10px;
-} */
-/* .active{
+}
+.active{
 	border-bottom: 1px solid #fff;
-} */
-
-/* .card-img1{
+}
+.card-img1{
 	width: 100%;
 	height: 12rem;
 	background-image: url('01.jpg');
@@ -102,9 +98,11 @@ text-align: center;
 	background-image: url('04.jpg');
 	background-size: cover;
 	background-position: center center;
-} */
+}
 .logo{
 	font-family: 'Dancing Script',cursive;
-	height: 3rem;
-    width: 3rem;  
+	font-size: 24px;
+	background-image: url('05.png');
 }
+
+
