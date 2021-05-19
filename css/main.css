@@ -1,0 +1,63 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.bg-black{
+    background-color: #000000;
+}
+
+.bg-navy{
+    background-color: #14213D;
+}
+
+.bg-accent{
+    background-color: #FCA311;
+}
+
+.bg-lightGray{
+    background-color: #E5E5E5;
+}
+
+.bg-white{
+    background-color: #fff;
+}
+/* ***************** */
+.txt-black{
+    color: #000000;
+}
+
+.txt-navy{
+    color: #14213D;
+}
+
+.txt-accent{
+    color: #FCA311;
+}
+
+.txt-accent a{
+    color: #FCA311;
+}
+.txt-accent a:hover{
+    color: #E5E5E5;
+}
+
+.txt-lightGray{
+    color: #E5E5E5;
+}
+
+.txt-white{
+    color: #fff;
+}
+
+.ps-light{
+    background-color: white;
+    /* height: 550px; */
+    width: 100%;
+}
+
+.ps-gray{
+    background-color: #E5E5E5;
+    height: 550px;
+    width: 100%;
+}
