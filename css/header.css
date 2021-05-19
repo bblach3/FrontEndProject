@@ -1,6 +1,6 @@
 header{
     height: 300px;
-    width: 100%;
+    /* width: 100%; */
 
     /* background-image: url("../img/bg3.jpg"); */
     background-position: center;
@@ -32,15 +32,3 @@ body {
 .opacity{
     opacity: .6;
 }
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
