@@ -13,17 +13,29 @@
     />
   </head>
   <style>
+    .cardshadow{
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+}
+.cardshadow:hover{
+transform: scale(1.05);
+box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
     #h3 {
       text-align: center;
-      color: red;
+      color:gray;
       font-family: fantasy;
-      font-size: 200px;
+      font-size: 50px;
     }
     body {
       margin: 0;
       padding: 0;
       font-family: sans-serif;
       background: url("/css/5BF9BDAC-9763-4AB9-A358-D64F9956FF66.jpeg");
+
+   
     }
     .img1 {
        /* height: 5rem; 
@@ -36,50 +48,74 @@
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 50px;
-    
       display: block;
-      width: 20%
+      width: 20%;
+      border:5px solid gray
 
 
     
     }
     @keyframes example{
        0%   {background-color:darkgoldenrod;}
-  25%  {background-color:darkmagenta;}
-  50%  {background-color:brown;}
-  100% {background-color: darkblue;}
+  25%  {background-color:gray;}
+  50%  {background-color:rgb(126, 14, 14);}
+  100% {background-color: rgb(235, 215, 215);}
     }
 
     .btn {
       margin: 20px;
+      color: gray;
+      background-color: white;
+      font-family: fantasy;
     }
   </style>
 
   <body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class=" text-light navbar-brand" href="..\hmtl\textindex.html">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="text-light nav-link active" aria-current="page" href="..\hmtl\venue.html"">Venue</a>
+        <a class=" text-light nav-link" href="..\html\city.html">City</a>
+        <a class=" text-light nav-link" href="..\aboutus\aboutus.html">About us</a>
+    <div class="collapse navbar-collapse show" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="text-light nav-link active" aria-current="page" href="..\js\test.html">Performer</a>
+    
+      </div>
+    </div>
+  </div>
+</nav>
     <div class="container">
-      <h3 id="h3">Mooove</h3>
+      <h3 id="h3">Lets Mooove</h3>
     <img class="img1" src="/css/05.png" class="img" />
+    
 
       <input
-        type="text"
+        type="text "
         id="events"
-        class="form-control btn-outline-blue"
+        class="form-control btn-outline-light text-dark table-hover"
         placeholder="Type in artist name"
         aria-describedby="button-addon2"
       />
       <button
-        class="btn btn-outline-light txt-accent table-hover"
+        class="btn btn-outline-light text-dark table-hover "
         type="button"
         id="button-addon2"
       >
         Search events
       </button>
-
+ <div id="error" class="text-light text-center"></div>
       <!-- <div style="background-image: url("pop")></div> -->
       <div
         id="temp"
         class="card-deck p-1 div d-flex flex-wrap justify-content-evenly"
       ></div>
+     
       <br />
       <div id="temp2" class="p-1 div"></div>
       <div id="temp3" class="p-1 div"></div>
