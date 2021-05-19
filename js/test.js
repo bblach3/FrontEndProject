@@ -2,6 +2,7 @@ let searchButton = document.querySelector('#button-addon2');
 
 searchButton.addEventListener('click', getInputValue);
 
+
 console.log(searchButton)
 
 function getInputValue() {
@@ -28,6 +29,7 @@ function getInputValue() {
                 arr.push(event);
                 event = {};
             }
+            
             console.log(arr);
             displayEvents(arr)
 
@@ -40,15 +42,16 @@ function getInputValue() {
         var location = document.getElementById("temp")
         let innerHtmlString = ""
         eventsArr.forEach(element => {
-            innerHtmlString += `<div class="card border-2" style="width: 18rem; margin: 0.3em;">
+            innerHtmlString += `<div class="card border-dark cardshadow"  style="width: 18rem; margin: 0.3em;">
             <img class="card-img-top" height=150px width=200px src="${element.events3}" alt="Card image cap">
              <div class="card-body">
             <h5 class="card-title">${element.events}</h5>
             <p class="card-text">${element.events2}</p>
               </div>
-            <div class="card-footer bg-transparent border-success"><a href="${element.events4}" class="btn btn-warning" style="background-color: blue">More Info</a></div>
+            <div class="card-footer bg-dark border-success"><a href="${element.events4}" class="btn btn-dark" style="background-color: dark">Buy Tickets</a></div>
             </div>`
         });
+        
         location.innerHTML = innerHtmlString;
     }
 }
